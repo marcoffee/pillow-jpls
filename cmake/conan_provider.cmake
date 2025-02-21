@@ -22,7 +22,7 @@
 
 # From https://github.com/conan-io/cmake-conan
 
-set(CONAN_MINIMUM_VERSION 2.0.5)
+set(CONAN_MINIMUM_VERSION 2.12.2)
 
 
 function(detect_os OS OS_API_LEVEL OS_SDK OS_SUBSYSTEM OS_VERSION)
