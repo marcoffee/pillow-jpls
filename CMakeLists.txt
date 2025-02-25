@@ -11,8 +11,11 @@ find_package(Eigen3 CONFIG REQUIRED)
 
 if (MSVC)
     add_compile_options(/Wall /permissive-)
+
 else()
-    add_compile_options(-Wall -Wextra -Wpedantic -Wno-unknown-pragmas)
+    add_compile_options(-Wall -Wextra -Wpedantic -Wno-unknown-pragmas -flto=auto -ffat-lto-objects)
+    add_link_options(-flto=auto -ffat-lto-objects)
+
     if (CMAKE_CXX_COMPILER_ID MATCHES Clang$)
         add_compile_options(-Wconversion -Wconditional-uninitialized)
     endif()

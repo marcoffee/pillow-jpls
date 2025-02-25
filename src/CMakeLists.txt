@@ -1,7 +1,7 @@
 Python_add_library(_pycharls MODULE pycharls.cpp WITH_SOABI)
 
 set_target_properties(_pycharls PROPERTIES
-        INTERPROCEDURAL_OPTIMIZATION ON
+        INTERPROCEDURAL_OPTIMIZATION OFF
         CXX_VISIBILITY_PRESET hidden
         VISIBILITY_INLINES_HIDDEN ON)
 
@@ -18,6 +18,7 @@ endif()
 target_link_libraries( _pycharls
     PRIVATE
         pybind11::headers
+        pybind11::lto
         charls
         Eigen3::Eigen
         fmt::fmt
