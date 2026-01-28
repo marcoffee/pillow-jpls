@@ -1,17 +1,17 @@
 #The MIT License (MIT)
-# 
+#
 # Copyright (c) 2019 JFrog
-# 
+#
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
 # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
-# 
+#
 # The above copyright notice and this permission notice shall be included in all
 # copies or substantial portions of the Software.
-# 
+#
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 # IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 # FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -22,7 +22,7 @@
 
 # From https://github.com/conan-io/cmake-conan
 
-set(CONAN_MINIMUM_VERSION 2.12.2)
+set(CONAN_MINIMUM_VERSION 2.24.0)
 
 
 function(detect_os OS OS_API_LEVEL OS_SDK OS_SUBSYSTEM OS_VERSION)
@@ -296,7 +296,7 @@ macro(set_conan_compiler_if_appleclang lang command output_variable)
         if (_xcrun_out STREQUAL "${CMAKE_${lang}_COMPILER}")
             set(${output_variable} "")
         endif()
-        unset(_xcrun_out)      
+        unset(_xcrun_out)
     endif()
 endmacro()
 

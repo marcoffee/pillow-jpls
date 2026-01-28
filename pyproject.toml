@@ -2,7 +2,7 @@
 requires = [
     "ninja",
     "pybind11~=2.11.1",
-    "conan~=2.12.2",
+    "conan~=2.24.0",
     "scikit-build-core",
 ]
 build-backend = "scikit_build_core.build"
