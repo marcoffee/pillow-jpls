@@ -1,5 +1,5 @@
 [requires]
-charls/2.4.2
+charls/2.4.5
 pybind11/3.0.4
 fmt/12.2.0
 eigen/3.4.1
