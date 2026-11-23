@@ -1,7 +1,7 @@
 [build-system]
 requires = [
     "ninja",
-    "pybind11~=3.0.1",
+    "pybind11~=3.0.4",
     "conan~=2.34.0",
     "scikit-build-core",
 ]
